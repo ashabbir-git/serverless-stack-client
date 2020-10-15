@@ -1,4 +1,6 @@
 export default {
+	MAX_ATTACHMENT_SIZE: 5000000,
+	STRIPE_KEY: "pk_test_51HZP9rHPP6g3dFGKhkMYGHYKQLEeUAFpXPipOdAFuPG4VcOavRB1GCeSSHqQlP9IHCK39gqRyNghQk4cdULE4Y7e00Z6ElO9Qo",
   s3: {
     REGION: "us-east-1",
     BUCKET: "notes-app-uploads-shabbir"
