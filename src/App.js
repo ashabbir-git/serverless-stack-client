@@ -8,6 +8,7 @@ import { AppContext } from "./libs/contextLib";
 import { Auth } from "aws-amplify";
 import { onError } from "./libs/errorLib";
 
+
 export default function App() {
   const history = useHistory();
   const [isAuthenticating, setIsAuthenticating] = useState(true);
@@ -22,7 +23,7 @@ export default function App() {
 		userHasAuthenticated(true);
 	  }
 	  catch(e) {
-		if (e !== 'No current user') {
+		if (e !== 'No current user found') {
 		  onError(e);
 		}
 	  }
